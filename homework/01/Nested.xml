@@ -1,0 +1,50 @@
+<closet>
+	<dresses>
+		<maxi-dresses>
+			<floral>
+				<short-sleeved>
+					<And-Other-Stories-blue />
+					<American-Eagle-pink />
+					<Reformation-pink />
+					<From-Italy-green />
+				</short-sleeved>	
+				<long-sleeved>
+					<Monki-yellow />
+				</long-sleeved>		
+			</floral>
+			<non-floral>
+				<short-sleeved>
+					<Gap-blue />
+					<From-Italy-red />
+				</short-sleeved>
+			</non-floral>			
+		</maxi-dresses>
+		<midi-dresses>
+			<geometric>
+				<short-sleeved>
+					<Mango-pink />
+					<Thrifted-white />
+				</short-sleeved>
+			</geometric>	
+		</midi-dresses>	
+	</dresses>	
+	<coats>
+		<spring-coats>
+			<Uniqlo-trench-beige />
+		</spring-coats>
+		<fall-coats>
+			<Mango-boxy-beige />
+			<Uniqlo-trench-grey />
+			<BCBG-fitted-green />
+		</fall-coats>
+		<winter-coats>
+			<Superdry-down-black />
+			<Superdry-down-red />
+			<And-Other-Stories-boxy-black />
+			<Nobis-down-black />
+		</winter-coats>
+	</coats>				
+</closet>
+
+
+
