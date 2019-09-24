@@ -1,0 +1,34 @@
+h1
+{font-family: "Didot";
+font-style: italic;
+font-size: 50px;
+}
+
+h3
+{font-family: didot;
+	color: darkgoldenrod;
+	margin: 20;
+}
+
+h4
+{
+	color: palevioletred;
+	margin: 20;
+}
+
+body
+{text-align: center;
+font-family: "baskerville";
+background-color: papayawhip;
+border: dashed 10px red;
+font-size: 25px;
+margin: 0;
+color: darkred;
+
+}
+
+.picture {border: dotted 3px goldenrod}
+.location {border: dotted 3px goldenrod;
+color: rosybrown;
+font-size: 40px}
+
