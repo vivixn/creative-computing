@@ -34,7 +34,7 @@ body {
 	transform: translate(25vw,0vh);
 	position: absolute;
 	
-	animation: slide 3s infinite alternate ease-out;
+	animation: slide 4s infinite alternate ease-out;
 }
 .square2 {
 	background-color: rgb(155,100,0);
@@ -43,14 +43,20 @@ body {
 	transform: translate(-25vw,0vh);
 	position: absolute;
 
-	animation: slide 3s infinite alternate ease-out;
+	animation: slide 4s infinite alternate ease-out;
 }
-
 
 @keyframes slide {
-	to {transform: rotate(180deg);
+
+	20% {transform: initial;
 	}
-}
+	
+	60% {
+		transform: rotate(360deg) scale(10) ;
+	}
+	80% {
+		transform: initial;
+	}
 
 </style>
 
