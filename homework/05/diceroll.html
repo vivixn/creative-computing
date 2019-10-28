@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(190,120,120);
+}
+
+
+</style>
+</head>
+<body>
+
+<img id="leftDice" src="diceimages/1.svg">
+<img id="rightDice" src="diceimages/2.svg">
+
+
+<script>
+	
+document.getElementById("leftDice").style.position = "absolute"
+document.getElementById("leftDice").style.justifyContent = "center"
+document.getElementById("leftDice").style.width = "250px"
+document.getElementById("leftDice").style.left = "0"
+
+document.getElementById("rightDice").style.position = "absolute"
+document.getElementById("rightDice").style.justifyContent = "center"
+document.getElementById("rightDice").style.width = "250px"
+document.getElementById("rightDice").style.right = "0"
+
+
+var leftDice = Math.floor(Math.random() * 6) + 1;
+var rightDice = Math.floor(Math.random() * 6) + 1 ;
+
+if (leftDice == 1) document.getElementById("leftDice").src = "diceimages/1.svg";
+if (leftDice == 2) document.getElementById("leftDice").src = "diceimages/2.svg";
+if (leftDice == 3) document.getElementById("leftDice").src = "diceimages/3.svg";
+if (leftDice == 4) document.getElementById("leftDice").src = "diceimages/4.svg";
+if (leftDice == 5) document.getElementById("leftDice").src = "diceimages/5.svg";
+if (leftDice == 6) document.getElementById("leftDice").src = "diceimages/6.svg";
+
+if (rightDice == 1) document.getElementById("rightDice").src = "diceimages/1.svg";
+if (rightDice == 2) document.getElementById("rightDice").src = "diceimages/2.svg";
+if (rightDice == 3) document.getElementById("rightDice").src = "diceimages/3.svg";
+if (rightDice == 4) document.getElementById("rightDice").src = "diceimages/4.svg";
+if (rightDice == 5) document.getElementById("rightDice").src = "diceimages/5.svg";
+if (rightDice == 6) document.getElementById("rightDice").src = "diceimages/6.svg";
+
+
+
+// hi robby can you help me figure out how to get the two cubes centered lol thank you
+
+
+</script>
+
+</body>
+</html>
