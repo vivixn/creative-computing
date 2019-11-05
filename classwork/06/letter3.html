@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+		.letter-path {
+			fill: none;
+			stroke: black;
+			stroke-width: 3px;
+			stroke-dasharray: 400;
+			stroke-dashoffset: 400;
+			stroke-linecap: square;
+			animation: ants 2s linear forwards;
+		}
+
+
+	@keyframes
+		ants {
+			to {stroke-dashoffset: 0; }
+		}
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 600 600" transform="">
+	<defs>
+		<code>
+			<![CDATA[
+size(600, 600);
+background("white");
+
+circle(50, 50, 40).fill("linen");
+circle(550, 50, 40).fill("linen");
+circle(550, 550, 40).fill("linen");
+circle(50, 550, 40).fill("linen");
+rect(50, 10, 500, 580).fill("linen");
+rect(10, 50, 580, 500).fill("linen");
+
+circle(300, 300, 88);
+]]>
+		</code>
+	</defs>
+	<circle cx="50" cy="50" r="40" fill="linen"/>
+	<circle cx="550" cy="50" r="40" fill="linen"/>
+	<circle cx="550" cy="550" r="40" fill="linen"/>
+	<circle cx="50" cy="550" r="40" fill="linen"/>
+	<rect x="50" y="10" width="500" height="580" fill="linen"/>
+	<rect x="10" y="50" width="580" height="500" fill="linen"/>
+	<circle cx="300" cy="300" r="88"/>
+</svg>
+
+</body>
+</html>

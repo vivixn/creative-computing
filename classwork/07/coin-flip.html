@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<style>
+
+	html, body {
+		height: 100%;
+	}
+
+
+	body {
+		margin: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 30vmin;
+	}
+
+
+</style>
+</head>
+<body>
+<script>
+	
+var randomNum = Math.random();
+var coin = randomNum > 0.5;
+
+// var coin = Math.random() > 0.5;
+
+console.log(document)
+
+// the dot goes INSIDE of a thing
+
+// console.log ( console )
+// this lets us see inside the console
+// console.log (document.body) lets us see the body within the document
+
+
+if (coin == true) document.body.innerHTML = "heads";
+if (coin == false) document.body.innerHTML = "tails";
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

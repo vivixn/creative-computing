@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+body {margin: 0}
+
+div {
+		width: 50vw;
+		height: 50vh;
+/*		animation: slide 4s infinite ease-out;*/
+}
+
+div {
+		width: 50vw;
+		height: 50vh;
+}
+
+.first {
+	background-color: #360;
+	animation: slide 4s infinite ease-out;
+/*animation name, speed, delay*/
+}
+
+.second {
+	background-color: #230;
+	animation: slide 4s infinite 2s ease-out ;
+}
+
+@keyframes slide {
+	50% {
+		transform: initial;
+	}
+
+	75% {
+		transform: translate(50vw, 0);
+	}
+	100% {
+		transform: initial;
+	}
+}
+/*every transformation is a reference to the beginning*/
+
+</style>
+
+</head>
+<body>
+
+<div class = "first"> </div>
+<div class = "second"></div>
+
+</body>
+</html>

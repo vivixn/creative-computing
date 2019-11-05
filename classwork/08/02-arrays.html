@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+
+// array is like saying list
+var array = [];
+// this is an empty array
+
+var numbers = [5, 10, 15, 20, 25];
+// variables are separated by commas
+
+var colors = [
+	"gold",
+	"fuchsia",
+	"tomato",
+	"linen",
+	"crimson"
+];
+
+console.log(numbers);
+console.log(colors);
+
+// the array is one spot in memory
+// inside of it is an unlimited number of variables
+// think of it like a shelf in memory
+
+// to get an item out of the array, use square brackets again
+console.log(colors[2]);
+// inside the square bracket, the # of the item
+
+
+var num = Math.random() * 5;
+console.log(num);
+var whole = Math.floor(num);
+console.log(whole);
+
+var randomColor = colors[whole];
+
+document.body.style.backgroundColor = randomColor;
+
+
+
+</script>
+</body>
+</html>
+

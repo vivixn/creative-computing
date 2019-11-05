@@ -1,0 +1,39 @@
+h1 {color: blue; 
+	margin: 0
+
+}
+
+h2 {margin: 0;
+
+}
+
+p 
+{font-family: "helvetica";
+	background-color: lightblue;
+}
+
+body
+{background-color: #eda;
+	color: orange;
+	text-align: center;
+	border: dashed 5px blue;
+}
+
+.address {color: chocolate;
+background-color: pink}
+
+/*page one*/
+.header-title {color: magenta;
+font-size: 30pt
+}
+
+img {
+	width: 200px;
+}
+
+.cat {
+	position: relative;
+	left: 50%
+	width: 100%
+	margin-left: -50px;
+}
