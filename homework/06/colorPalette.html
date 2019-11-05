@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style>
+
+html, body { 
+	margin: 0;
+	height: 100%; }	
+body { display: flex; }
+div { flex: 1; }
+
+</style>
+</head>
+<body>
+
+<script>
+
+var setOfDivs = Math.floor(Math.random() * 50);
+
+var counter = 0;
+while (counter < setOfDivs) {
+
+	var h = Math.floor(Math.random() * 360);
+    var s = Math.floor(Math.random() * 100);
+    var l = Math.floor(Math.random() * 100); 
+
+  	var randomDiv = document.createElement("div");
+ 	randomDiv.innerHTML = "hsl(" + h + ", " + s + "%, " + l + "%)";
+    document.body.appendChild(randomDiv);
+ 
+ counter = counter + 1; }
+
+
+</script>
+</body>
+</html>
