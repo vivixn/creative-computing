@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<h1 id="text"></h1>
+
+<script>
+document.onkeypress = function(event) {
+	// get what's already inside the header
+	var text = document.getElementById("text").innerHTML;
+	// add our letter to the end of text
+	text = text + event.key;
+
+	document.getElementById("text").innerHTML = text;
+}
+
+
+
+
+
+</script>
+</body>
+</html>

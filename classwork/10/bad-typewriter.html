@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+	<style>
+	h1 {
+		position: absolute;
+		font-family: monospace;
+
+
+	}
+	</style>
+	</head>
+	<body>
+	<script>
+		
+	document.onkeypress = function (event) {
+		var header = document.createElement("h1");
+		header.innerHTML = event.key;
+		header.style.top = Math.random()* window.innerHeight + "px";
+		header.style.left = Math.random()* window.innerWidth + "px";
+		header.style.color = "lightpink";
+		document.body.appendChild(header);
+	}
+
+
+
+
+	</script>
+	</body>
+	</html>	

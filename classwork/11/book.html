@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<input type="file" id="file">
+
+<script>
+
+var reader = new FileReader();
+
+document.getElementById("file").onchange = function(event) {
+	reader.readAsText(this.files[0]);
+};
+
+reader.onload = function(event) {
+	var text = event.target.result;
+	// console.log(text);
+
+	// var array = text.split(" ").sort();
+	var array = text.replace(".", " ").split(" ").sort();
+
+	// console.log(array);
+	printToPage(array);
+
+}
+
+function printToPage(words){
+	var counter = 1;
+	while(counter < words.length){
+		var lastword = words[counter - 1];
+		var thisword = words[counter];
+		if (lastword != thisword) {
+			var p = document.createElement("p");
+			p.innerHTML = thisword;
+			document.body.appendChild(p);
+		}
+		counter = counter + 1;
+	}
+}
+
+function dictionary(words){
+
+}
+</script>
+
+
+</body>
+</html>

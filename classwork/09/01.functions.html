@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+
+
+// #1. functions can store code to be run anytime in the future
+	
+function printTime() {
+	// whatever I type here is inside the function
+	var d = new Date();
+	var time = d.toLocaleTimeString();
+	console.log(time);
+
+}
+
+printTime();
+
+document.onmousemove = printTime;
+
+var number = Math.random();
+
+// functions can turn into different things such as numbers, strings, booleans, arrays, etc. 
+</script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+	
+// objects are containers just like arrays
+// the only difference
+// instead of numbers as the position, objects use words
+// example: myobject["hello"] instead of myarray[4]
+
+var object = {};
+
+object["hello"] = 5;
+object["yes"] = "I am hungry";
+
+console.log(object);
+
+// the two parts are called "key" and "value"
+// key is the position. numbers in arrays strings in objects
+// the value is whatever is stored
+
+//  why?
+var position = [40.735, -73.994];
+// make the variable and set it in one line of code.
+var position2 = {
+	"lat": 40.735,
+	"lon": -73.994
+}
+
+console.log(position2["lat"]);
+
+// these are the same
+console.log(object["hello"]);
+console.log(object.hello);
+// this syntax makes objects really nice to use
+
+// these are all objects
+console.log(console);
+console.log(Math);
+console.log(document); // shows us the dom components
+
+
+</script>
+</body>
+</html>

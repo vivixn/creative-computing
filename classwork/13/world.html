@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	
+	var image = "https://robbykraft.github.io/CreativeComputing/earth-map.svg";
+
+// load an image from the internet. When it is done, append it to the page
+	fetch(image).then(function(data){return data.text(); })
+		. then(function(svg){
+			document.body.insertAdjacentHTML("beforeend", svg);
+			// console.log(svg); 
+			loadData();
+			})
+
+function loadData() {
+	fetch("https://robbykraft.github.io/CreativeComputing/class.json")
+	.then(function(data){return data.json(); })
+	.then(function(json) {
+
+
+console.log(json);
+
+var students = json.class;
+
+// console.log(students[5].name)
+
+// make a loop to iterate over the array
+
+var svg = document.getElementsByTagName("svg")[0];
+// console.log(svg);
+
+// make a loop to iterate over the array
+for (var i = 0; i < students.length; i = i + 1) {
+	 var circle = document.createElementNS( "http://www.w3.org/2000/svg", "circle");
+	 circle.setAttribute("cx", students[i].lon);
+	 circle.setAttribute("cy", -students[i].lat);
+	 circle.setAttribute("r", 1);
+	 circle.setAttribute("fill", students[i].color);
+	 circle.onmouseover = function
+
+
+	 console.log(students[i]);
+
+	 svg.appendChild(circle);
+
+}
+
+})
+}
+
+</script>
+</body>
+</html>

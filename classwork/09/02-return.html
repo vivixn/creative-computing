@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+
+// #2 functions can turn into values to be used after they've finished running
+
+function randomColor () {
+	var hue = Math.random() * 360;
+	var color = "hsl(" + hue + ", 100%, 50%)";
+	// just like how Math.random() turns into a number, our function will turn into a string
+	return color; // "turns into"
+}
+
+var num = Math.random();
+
+document.body.style.backgroundColor = randomColor();
+
+// console.log(randomColor());
+
+</script>
+</body>
+</html>

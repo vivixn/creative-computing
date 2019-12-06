@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<input type="file" id="file">
+
+<script>
+
+function randomElement(array){
+	return array[ Math.floor(Math.random() * array.length) ];
+}
+
+
+var reader = new FileReader();
+
+document.getElementById("file").onchange = function(event) {
+	reader.readAsText(this.files[0]);
+};
+
+reader.onload = function(event) {
+	var text = event.target.result;
+	buildMarkov(text);
+}
+ 
+function buildMarkov(text) {
+	var array = text
+		.replace(/[^a-zA-Z\d]/g," ")
+		.split(/\s/)
+		.filter(s => s != "");
+	// console.log(array);
+	var markov = {};
+
+	for (var i = 1; i < array.length; i = i + 1){
+		var prev = array[i-1];
+		var curr = array[i];
+		if (!markov[prev]){
+			markov[prev] = [];
+		}
+		markov[prev].push(curr);
+	}
+	// console.log(markov);
+	generateText(markov);
+}
+
+function generateText(markov){
+	var firstWord = randomElement( Object.keys(markov) 
+		);
+	var phrase = [];
+	phrase.push(firstWord);
+
+	for (var i = 0; i < 50; i = i + 1) {
+		var array = markov[ phrase[i] ];
+		// these are all the next words
+		var nextWord = randomElement(array);
+		phrase.push(nextWord);
+	}
+	
+	// console.log(phrase);
+
+	var p = document.createElement("p");
+	p.innerHTML = phrase.join(" ");
+	document.body.appendChild(p);
+}
+
+
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	
+function random(low, high) {
+	var num = Math.floor(Math.random() * (high-low) + low );
+	return num;
+}
+
+// console.log( random(90, 100));
+
+var color = "hsl(" + random(270, 300) + ", " + random(50, 80) + "%, " + random(60,70) + "%) ";
+
+document.body.style.backgroundColor = color;
+</script>
+</body>
+</html>
