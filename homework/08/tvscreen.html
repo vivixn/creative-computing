@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+
+html{
+	margin: 0;
+  height: 100%;
+  width: 100vw,
+}
+
+
+body { 
+
+background-image:url('https://media.giphy.com/media/vG1Xwgh9BedMI/giphy.gif');
+background-position: center;
+background-size: cover;
+
+margin: 0;
+position: absolute;
+display: flex,
+}
+
+
+</style>
+</head>
+
+
+
+<body>
+
+    <img id="television">
+    <img alt="television" src="https://media.giphy.com/media/vG1Xwgh9BedMI/giphy.gif" 
+
+    id="arrowChangeImage" onclick="changeImage()"/>
+
+
+
+   
+
+
+<script>
+    var imgs = ["https://media.giphy.com/media/vG1Xwgh9BedMI/giphy.gif", 
+        		"https://media.giphy.com/media/QrGKE5azcZI7C/giphy.gif",  
+        		"https://media.giphy.com/media/Am6Q6rTHaFbeU/giphy.gif"];
+
+    function changeImage(consolelog) {
+        var img = document.getElementById("arrowChangeImage");
+        img.src = imgs[imgs.indexOf(img.src) 
+        		// + (consolelog || 1)] || imgs[consolelog ? imgs.length - 1 : 0];
+    }
+
+    document.onkeydown = function(event) {
+
+        event = event || window.event;
+
+        if (event.keyCode == '38') {
+            changeImage()
+
+        } else if (event.keyCode == '40') {
+            changeImage()
+        }
+    }
+</script>
+
+
+
+
+<!-- 
+FUNCTION STUFF
+
+function printTime() {
+	// whatever I type here is inside the function
+	var d = new Date();
+	var time = d.toLocaleTimeString();
+	console.log(time);
+
+}
+
+printTime();
+
+document.onmousemove = printTime;
+
+var number = Math.random(); -->
+
+
+
+</body>
+</html>
